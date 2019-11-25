@@ -134,10 +134,11 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/templates/default" />
       <recent name="$PROJECT_DIR$/src/Controller" />
       <recent name="$PROJECT_DIR$/translations" />
@@ -169,7 +170,7 @@
       <workItem from="1573403219356" duration="2208000" />
       <workItem from="1573412023850" duration="6693000" />
       <workItem from="1573442244983" duration="26000" />
-      <workItem from="1574693712824" duration="11896000" />
+      <workItem from="1574693712824" duration="13332000" />
     </task>
     <servers />
   </component>
