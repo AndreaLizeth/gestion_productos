@@ -5,3 +5,6 @@ fos_user:
   from_email:
     address: "andyliz5429@gmail.com"
     sender_name: "Andrea Lizeth"
+  registration:
+    confirmation:
+      enabled: true

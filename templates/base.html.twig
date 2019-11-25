@@ -6,6 +6,14 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+    {% if app.user %}
+        {% for role in app.user.roles %}
+            {{ role }}
+        {% endfor %}
+    {% else %}
+        no existe sesion activa
+    {% endif %}
+
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
