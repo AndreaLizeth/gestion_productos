@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba87cba5-5453-4c60-8078-8da00ea7678a" name="Default Changelist" comment="" />
+    <list default="true" id="ba87cba5-5453-4c60-8078-8da00ea7678a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191126025450.php" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +157,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Version20191126035543.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/gestion_productos/Migrations/Version20191126035543.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Version20191126035543.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -174,6 +186,7 @@
       <workItem from="1574736716030" duration="26000" />
       <workItem from="1574736744890" duration="1040000" />
       <workItem from="1574738931288" duration="6000" />
+      <workItem from="1574740271684" duration="323000" />
     </task>
     <servers />
   </component>
