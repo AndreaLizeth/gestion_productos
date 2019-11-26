@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba87cba5-5453-4c60-8078-8da00ea7678a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191126025450.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Country.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Country.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,6 +133,7 @@
   <component name="ProjectId" id="1TQrUHZ12UzmrzYgFUkZ7b9OAxz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -186,7 +188,7 @@
       <workItem from="1574736716030" duration="26000" />
       <workItem from="1574736744890" duration="1040000" />
       <workItem from="1574738931288" duration="6000" />
-      <workItem from="1574740271684" duration="323000" />
+      <workItem from="1574740271684" duration="1072000" />
     </task>
     <servers />
   </component>
