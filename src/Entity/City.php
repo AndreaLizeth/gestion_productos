@@ -27,6 +27,8 @@ class City
      */
     private $country;
 
+
+
     public function getId(): ?int
     {
         return $this->id;
@@ -55,4 +57,7 @@ class City
 
         return $this;
     }
+
+
+
 }

@@ -19,8 +19,8 @@ class Country
     private $id;
 
     /**
- * @ORM\Column(type="string", length=150)
- */
+     * @ORM\Column(type="string", length=150)
+     */
     private $name;
 
     /**
@@ -32,6 +32,7 @@ class Country
     {
         $this->cities = new ArrayCollection();
     }
+
 
     public function getId(): ?int
     {
@@ -80,4 +81,6 @@ class Country
 
         return $this;
     }
+
+
 }
