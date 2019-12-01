@@ -10,13 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-/**
-<<<<<<< HEAD
- * @Route("/ciudad")
-=======
- * @Route("/city")
->>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
- */
+
 class CityController extends AbstractController
 {
     /**
@@ -29,13 +23,6 @@ class CityController extends AbstractController
         ]);
     }
 
-    /**
-<<<<<<< HEAD
-     * @Route("/nuevo", name="city_new", methods={"GET","POST"})
-=======
-     * @Route("/new", name="city_new", methods={"GET","POST"})
->>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
-     */
     public function new(Request $request): Response
     {
         $city = new City();
@@ -66,13 +53,7 @@ class CityController extends AbstractController
         ]);
     }
 
-    /**
-<<<<<<< HEAD
-     * @Route("/{id}/editar", name="city_edit", methods={"GET","POST"})
-=======
-     * @Route("/{id}/edit", name="city_edit", methods={"GET","POST"})
->>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
-     */
+  
     public function edit(Request $request, City $city): Response
     {
         $form = $this->createForm(CityType::class, $city);

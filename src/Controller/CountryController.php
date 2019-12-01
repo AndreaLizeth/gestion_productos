@@ -1,5 +1,6 @@
 <?php
 namespace App\Controller;
+
 use App\Entity\City;
 use App\Entity\Country;
 use App\Form\CountryType;
@@ -79,6 +80,7 @@ class CountryController extends AbstractController
         }
         return $this->redirectToRoute('country_index');
     }
+
     /**
      * @Route("/ciudad_pais", name="cities_by_country", condition="request.headers.get('X-Requested-With') == 'XMLHttpRequest'")
      */
@@ -89,4 +91,4 @@ class CountryController extends AbstractController
         $cities = $em->getRepository(City::class)->findByCountry($country_id);
         return new JsonResponse($cities);
     }
-}
+
