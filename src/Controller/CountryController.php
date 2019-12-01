@@ -2,10 +2,12 @@
 
 namespace App\Controller;
 
+use App\Entity\City;
 use App\Entity\Country;
 use App\Form\CountryType;
 use App\Repository\CountryRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -90,5 +92,16 @@ class CountryController extends AbstractController
         }
 
         return $this->redirectToRoute('country_index');
+    }
+
+    /**
+     * @Route("/ciudad_pais", name="cities_by_country", condition="request.headers.get('X-Requested-With') == 'XMLHttpRequest'")
+     */
+    public function citiesByCountry(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $country_id = $request->request->get('country_id');
+        $cities = $em->getRepository(City::class)->findByCountry($country_id);
+        return new JsonResponse($cities);
     }
 }

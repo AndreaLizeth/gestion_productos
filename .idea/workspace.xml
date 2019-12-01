@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="ba87cba5-5453-4c60-8078-8da00ea7678a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CountryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CountryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CityType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CityType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CountryType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CountryType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191126035543.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/City.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/CityRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CityRepository.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -140,16 +138,16 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Form/EventListener" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Form/EventListener" />
       <recent name="$PROJECT_DIR$/templates/bundles/FOSUserBundle" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/templates/default" />
       <recent name="$PROJECT_DIR$/src/Controller" />
-      <recent name="$PROJECT_DIR$/translations" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -195,7 +193,7 @@
       <workItem from="1574738931288" duration="6000" />
       <workItem from="1574740271684" duration="1072000" />
       <workItem from="1575176254253" duration="13000" />
-      <workItem from="1575176268929" duration="944000" />
+      <workItem from="1575176268929" duration="1720000" />
     </task>
     <servers />
   </component>
