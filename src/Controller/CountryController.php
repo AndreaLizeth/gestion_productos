@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Controller;
 
 use App\Entity\City;
@@ -11,7 +10,6 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-
 /**
  * @Route("/pais")
  */
@@ -26,7 +24,6 @@ class CountryController extends AbstractController
             'countries' => $countryRepository->findAll(),
         ]);
     }
-
     /**
      * @Route("/nuevo", name="country_new", methods={"GET","POST"})
      */
@@ -35,21 +32,17 @@ class CountryController extends AbstractController
         $country = new Country();
         $form = $this->createForm(CountryType::class, $country);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($country);
             $entityManager->flush();
-
             return $this->redirectToRoute('country_index');
         }
-
         return $this->render('country/new.html.twig', [
             'country' => $country,
             'form' => $form->createView(),
         ]);
     }
-
     /**
      * @Route("/{id}", name="country_show", methods={"GET"})
      */
@@ -59,7 +52,6 @@ class CountryController extends AbstractController
             'country' => $country,
         ]);
     }
-
     /**
      * @Route("/{id}/editar", name="country_edit", methods={"GET","POST"})
      */
@@ -67,19 +59,15 @@ class CountryController extends AbstractController
     {
         $form = $this->createForm(CountryType::class, $country);
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
-
             return $this->redirectToRoute('country_index');
         }
-
         return $this->render('country/edit.html.twig', [
             'country' => $country,
             'form' => $form->createView(),
         ]);
     }
-
     /**
      * @Route("/{id}", name="country_delete", methods={"DELETE"})
      */
@@ -90,7 +78,6 @@ class CountryController extends AbstractController
             $entityManager->remove($country);
             $entityManager->flush();
         }
-
         return $this->redirectToRoute('country_index');
     }
 
@@ -104,4 +91,4 @@ class CountryController extends AbstractController
         $cities = $em->getRepository(City::class)->findByCountry($country_id);
         return new JsonResponse($cities);
     }
-}
+
