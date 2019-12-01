@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ba87cba5-5453-4c60-8078-8da00ea7678a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/Controller/CountryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/CountryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/City.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/City.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
@@ -11,6 +12,8 @@
       <change beforePath="$PROJECT_DIR$/src/Migrations/Version20191201001216.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/CityRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CityRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/bundles/FOSUserBundle/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/FOSUserBundle/layout.html.twig" afterDir="false" />
+=======
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,6 +169,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="Version20191126035543.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/gestion_productos/Migrations/Version20191126035543.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Version20191126035543.php" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -185,9 +198,13 @@
       <workItem from="1574736716030" duration="26000" />
       <workItem from="1574736744890" duration="1040000" />
       <workItem from="1574738931288" duration="6000" />
+<<<<<<< HEAD
       <workItem from="1575158855017" duration="1198000" />
       <workItem from="1575161974276" duration="11000" />
       <workItem from="1575161987106" duration="5806000" />
+=======
+      <workItem from="1574740271684" duration="1072000" />
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
     </task>
     <servers />
   </component>

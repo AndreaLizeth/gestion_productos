@@ -2,18 +2,28 @@
 
 namespace App\Controller;
 
+<<<<<<< HEAD
 use App\Entity\City;
+=======
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
 use App\Entity\Country;
 use App\Form\CountryType;
 use App\Repository\CountryRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+<<<<<<< HEAD
 use Symfony\Component\HttpFoundation\JsonResponse;
+=======
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
+<<<<<<< HEAD
  * @Route("/pais")
+=======
+ * @Route("/country")
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
  */
 class CountryController extends AbstractController
 {
@@ -28,7 +38,11 @@ class CountryController extends AbstractController
     }
 
     /**
+<<<<<<< HEAD
      * @Route("/nuevo", name="country_new", methods={"GET","POST"})
+=======
+     * @Route("/new", name="country_new", methods={"GET","POST"})
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
      */
     public function new(Request $request): Response
     {
@@ -61,7 +75,11 @@ class CountryController extends AbstractController
     }
 
     /**
+<<<<<<< HEAD
      * @Route("/{id}/editar", name="country_edit", methods={"GET","POST"})
+=======
+     * @Route("/{id}/edit", name="country_edit", methods={"GET","POST"})
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
      */
     public function edit(Request $request, Country $country): Response
     {
@@ -93,6 +111,7 @@ class CountryController extends AbstractController
 
         return $this->redirectToRoute('country_index');
     }
+<<<<<<< HEAD
     /**
      * @Route("/ciudad_pais", name="cities_by_country", condition="request.headers.get('X-Requested-With') == 'XMLHttpRequest'")
      */
@@ -103,4 +122,6 @@ class CountryController extends AbstractController
         $cities = $em->getRepository(City::class)->findByCountry($country_id);
         return new JsonResponse($cities);
     }
+=======
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
 }

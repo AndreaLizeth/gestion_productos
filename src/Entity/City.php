@@ -39,6 +39,11 @@ class City
         $this->users = new ArrayCollection();
     }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
     public function getId(): ?int
     {
         return $this->id;
@@ -98,4 +103,10 @@ class City
 
         return $this;
     }
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
 }

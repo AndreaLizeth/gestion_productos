@@ -9,7 +9,10 @@
         <thead>
             <tr>
                 <th>Id</th>
+<<<<<<< HEAD
                 <th>Name</th>
+=======
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
                 <th>actions</th>
             </tr>
         </thead>
@@ -17,7 +20,10 @@
         {% for country in countries %}
             <tr>
                 <td>{{ country.id }}</td>
+<<<<<<< HEAD
                 <td>{{ country.name }}</td>
+=======
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
                 <td>
                     <a href="{{ path('country_show', {'id': country.id}) }}">show</a>
                     <a href="{{ path('country_edit', {'id': country.id}) }}">edit</a>
@@ -25,7 +31,11 @@
             </tr>
         {% else %}
             <tr>
+<<<<<<< HEAD
                 <td colspan="3">no records found</td>
+=======
+                <td colspan="2">no records found</td>
+>>>>>>> 1be157315573d9ef9a056ec3cff3e5cb2875fc19
             </tr>
         {% endfor %}
         </tbody>
