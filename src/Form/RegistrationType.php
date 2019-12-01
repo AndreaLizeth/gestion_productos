@@ -3,6 +3,8 @@
 
 namespace App\Form;
 
+use App\Form\EventListener\AddCityFieldListener;
+use App\Form\EventListener\AddCountryFieldListener;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 
@@ -10,7 +12,9 @@ class RegistrationType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('name');
+        $builder->add('name')
+            ->addEventSubscriber(new AddCountryFieldListener())
+            ->addEventSubscriber(new AddCityFieldListener());
     }
 
     public function getParent()

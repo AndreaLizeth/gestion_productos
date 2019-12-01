@@ -26,3 +26,25 @@
         {% endblock fos_user_content %}
     </div>
 {% endblock %}
+
+{% block javascripts %}
+    <script>
+        $("#fos_user_registration_form_country").change(function() {
+            const data = {
+                country_id: $(this).val()
+            };
+            $.ajax({
+                type: 'post',
+                url: '{{ path("cities_by_country") }}',
+                data: data,
+                success: function(data) {
+                    const $city_selector = $('#fos_user_registration_form_city');
+                    $city_selector.html('<option>Selecciona...</option>');
+                    for (let i = 0, total = data.length; i < total; i++) {
+                        $city_selector.append('<option value="' + data[i].id + '">' + data[i].name + '</option>');
+                    }
+                }
+            });
+        });
+    </script>
+{% endblock javascripts %}
