@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/country")
+ * @Route("/pais")
  */
 class CountryController extends AbstractController
 {
@@ -26,7 +26,7 @@ class CountryController extends AbstractController
     }
 
     /**
-     * @Route("/new", name="country_new", methods={"GET","POST"})
+     * @Route("/nuevo", name="country_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response
     {
@@ -59,7 +59,7 @@ class CountryController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/edit", name="country_edit", methods={"GET","POST"})
+     * @Route("/{id}/editar", name="country_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, Country $country): Response
     {
